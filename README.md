@@ -181,19 +181,14 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md). Quick path:
 
 ## 💸 Support the Project / Поддержать проект
 
-If these skills saved you tokens and nerves, you can support the project ☕️
+Если эти скиллы сэкономили вам токены и нервы — поддержите проект ☕️
 
-| Network / Сеть | Address / Адрес |
-|----------------|-----------------|
+| Сеть / Network | Адрес / Address |
+|---|---|
 | **BTC** | `bc1qd8sa7e4f696wmcyszuxh9snqt2n66zrhz9g80j` |
 | **ETH** | `0xD26f0efE6A8F11e127c3Af3D6163BD458a1693c3` |
 | **USDT (TON)** | `UQAoI2i8P9-JeZhvGSUwKnymVyY5cb-1Rg7pdqoWMNena7DP` |
 | **SOL** | `99EtqBVTeF5UNp9a1oPi18iVXbXptTG7YQ6JeJvXMUJK` |
-
-| Platform / Платформа | Link / Ссылка |
-|----------------------|---------------|
-| **Boosty** | [boosty.to/josephpost](https://boosty.to/josephpost) |
-| **GitHub Sponsors** | [github.com/sponsors/zad111ak-ai](https://github.com/sponsors/zad111ak-ai) |
 
 ---
 
