@@ -1,15 +1,22 @@
-# 🧠 Hermes Agent Skills — Коллекция скиллов для AI-агента
+# 🧠 Hermes Agent Skills — Коллекция скиллов для AI-агента / Skill Collection for AI Agents
 
-**AI, который думает о своей эффективности.**
+**AI, который думает о своей эффективности.** / **AI that thinks about its own efficiency.**
+
+<p align="center">
+  <a href="#russian">🇷🇺 Русский</a> &nbsp;|&nbsp; <a href="#english">🇬🇧 English</a>
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 ---
 
-## 🎯 Философия
+<a id="russian"></a>
+## 🇷🇺 Русская версия
 
-AI-агенты склонны к когнитивным искажениям:.analysis paralysis, analysis paralysis, analysis paralysis... и они этого не осознают.
+### 🎯 Философия
+
+AI-агенты склонны к когнитивным искажениям: analysis paralysis, analysis paralysis, analysis paralysis... и они этого не осознают.
 
 **Hermes Agent Skills** — это набор системных промптов, которые заставляют AI-агента думать о своей эффективности:
 
@@ -18,11 +25,9 @@ AI-агенты склонны к когнитивным искажениям:.a
 - 🔒 **Быть безопасным** — не ломать продакшн
 - 📊 **Отслеживать расходы** — не просыпаться с нулём на балансе
 
----
+### 📦 Скиллы
 
-## 📦 Скиллы
-
-### 🧠 Meta (мышление агента)
+#### 🧠 Meta (мышление агента)
 
 | Скилл | Описание | Экономия |
 |-------|----------|----------|
@@ -32,7 +37,7 @@ AI-агенты склонны к когнитивным искажениям:.a
 | [skill-trigger-system](skills/meta/skill-trigger-system/) | Умные триггеры — активировать скилл в нужный момент | ~40% пропущенных задач |
 | [api-cost-tracker](skills/meta/api-cost-tracker/) | Трекер расходов на API в реальном времени | ~95% от сюрпризов с балансом |
 
-### ⚙️ Productivity (эффективность)
+#### ⚙️ Productivity (эффективность)
 
 | Скилл | Описание | Экономия |
 |-------|----------|----------|
@@ -45,110 +50,159 @@ AI-агенты склонны к когнитивным искажениям:.a
 | [tool-proficiency-tracker](skills/productivity/tool-proficiency-tracker/) | Трекинг инструментов — знать что работает | ~20% лишних вызовов |
 | [russia-hacks](skills/productivity/russia-hacks/) | Обход DPI из РФ: прокси, Hysteria 2, альтернативы | 🔓 Доступ к API |
 
-### 🔒 Security (безопасность)
+#### 🔒 Security (безопасность)
 
 | Скилл | Описание |
 |-------|----------|
 | [security-audit](skills/security/security-audit/) | Аудит безопасности перед деплоем |
 
-### 📝 Content (контент)
+#### 📝 Content (контент)
 
 | Скилл | Описание |
 |-------|----------|
 | [content-pipeline](skills/content/content-pipeline/) | Пайплайн создания контента для Telegram |
 
----
+### 🚀 Быстрый старт
 
-## 🚀 Быстрый старт
-
-### 1. Установи Hermes Agent
 ```bash
+# 1. Установи Hermes Agent
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
-```
 
-### 2. Скопируй скиллы
-```bash
-# Клонируй репозиторий
+# 2. Клонируй и скопируй скиллы
 git clone https://github.com/zad111ak-ai/hermes-agent-skills.git
-
-# Скопируй нужные скиллы
 cp -r hermes-agent-skills/skills/meta/* ~/.hermes/skills/
 cp -r hermes-agent-skills/skills/productivity/* ~/.hermes/skills/
-```
 
-### 3. Проверь
-```bash
+# 3. Проверь
 hermes skills list
 ```
 
----
+### 📚 Примеры
 
-## 📚 Примеры
+Смотри [examples/BEFORE_AFTER.md](examples/BEFORE_AFTER.md) — наглядные сравнения ДО и ПОСЛЕ.
 
-Смотри [examples/BEFORE_AFTER.md](examples/BEFORE_AFTER.md) — наглядные сравнения ДО и ПОСЛЕ применения скиллов.
+### 🤝 Как внести вклад
 
----
-
-## 🤝 Как внести вклад
-
-Читай [CONTRIBUTING.md](CONTRIBUTING.md) — там пошаговый гайд.
-
-### Быстрый путь:
+Читай [CONTRIBUTING.md](CONTRIBUTING.md). Быстрый путь:
 1. Скопируй [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md)
 2. Напиши свой скилл
 3. Отправь PR
 
----
-
-## 📂 Структура
+### 📂 Структура
 
 ```
 hermes-agent-skills/
-├── README.md                    # Этот файл
-├── CONTRIBUTING.md              # Гайд для контрибьюторов
-├── SKILL_TEMPLATE.md            # Шаблон скилла
-├── examples/
-│   └── BEFORE_AFTER.md          # Примеры ДО/ПОСЛЕ
-├── skills/
-│   ├── meta/                    # Мышление агента
-│   ├── productivity/            # Эффективность
-│   ├── security/                # Безопасность
-│   └── content/                 # Контент
-└── LICENSE                      # MIT
+├── README.md / CONTRIBUTING.md / SKILL_TEMPLATE.md
+├── examples/BEFORE_AFTER.md
+├── skills/{meta, productivity, security, content}/
+└── LICENSE
 ```
 
 ---
 
-## 💸 Поддержать проект
+<a id="english"></a>
+## 🇬🇧 English Version
 
-Проект развивается силами энтузиастов. Если скиллы сэкономили вам токены и нервы, вы можете поддержать развитие репозитория ☕️
+### 🎯 Philosophy
 
-### Криптовалюта
+AI agents are prone to cognitive biases: analysis paralysis, analysis paralysis, analysis paralysis... and they don't even realize it.
 
-| Сеть | Адрес |
-|------|-------|
+**Hermes Agent Skills** is a set of system prompts that force AI agents to think about their own efficiency:
+
+- 💰 **Save tokens** — don't spend $5 on a $0.01 task
+- 🧠 **Remember context** — don't forget what you did 5 minutes ago
+- 🔒 **Stay safe** — don't break production
+- 📊 **Track costs** — don't wake up with a zero balance
+
+### 📦 Skills
+
+#### 🧠 Meta (Agent Cognition)
+
+| Skill | Description | Savings |
+|-------|-------------|---------|
+| [memory-compactor](skills/meta/memory-compactor/) | Context compression — stop spending tokens on stale info | ~50% tokens |
+| [post-mortem-analyzer](skills/meta/post-mortem-analyzer/) | Error analysis — stop repeating the same bugs | ~30% repeat errors |
+| [reflexive-trigger-boost](skills/meta/reflexive-trigger-boost/) | Trigger self-analysis — understand when to activate | ~20% relevance |
+| [skill-trigger-system](skills/meta/skill-trigger-system/) | Smart triggers — activate the right skill at the right time | ~40% missed tasks |
+| [api-cost-tracker](skills/meta/api-cost-tracker/) | Real-time API cost tracker | ~95% balance surprises |
+
+#### ⚙️ Productivity
+
+| Skill | Description | Savings |
+|-------|-------------|---------|
+| [agent-communication](skills/productivity/agent-communication/) | Inter-agent communication — coordination without chaos | ~25% duplication |
+| [auto-qa-gates](skills/productivity/auto-qa-gates/) | Automated QA — quality checks before deploy | ~40% bugs |
+| [cost-aware-orchestrator](skills/productivity/cost-aware-orchestrator/) | Choose cheap models for simple tasks | ~95% costs |
+| [decision-framework](skills/productivity/decision-framework/) | Structured decisions — stop getting lost in options | ~30% analysis paralysis |
+| [reflection-qa](skills/productivity/reflection-qa/) | Reflection — verify your own answers | ~35% errors |
+| [session-hygiene-plus](skills/productivity/session-hygiene-plus/) | Session hygiene — clean up context | ~87% tokens |
+| [tool-proficiency-tracker](skills/productivity/tool-proficiency-tracker/) | Tool tracking — know what works | ~20% extra calls |
+| [russia-hacks](skills/productivity/russia-hacks/) | DPI bypass from Russia: proxies, Hysteria 2, alternatives | 🔓 API access |
+
+#### 🔒 Security
+
+| Skill | Description |
+|-------|-------------|
+| [security-audit](skills/security/security-audit/) | Security audit before deployment |
+
+#### 📝 Content
+
+| Skill | Description |
+|-------|-------------|
+| [content-pipeline](skills/content/content-pipeline/) | Content creation pipeline for Telegram |
+
+### 🚀 Quick Start
+
+```bash
+# 1. Install Hermes Agent
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+
+# 2. Clone and copy skills
+git clone https://github.com/zad111ak-ai/hermes-agent-skills.git
+cp -r hermes-agent-skills/skills/meta/* ~/.hermes/skills/
+cp -r hermes-agent-skills/skills/productivity/* ~/.hermes/skills/
+
+# 3. Verify
+hermes skills list
+```
+
+### 📚 Examples
+
+See [examples/BEFORE_AFTER.md](examples/BEFORE_AFTER.md) — side-by-side BEFORE/AFTER comparisons.
+
+### 🤝 Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md). Quick path:
+1. Copy [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md)
+2. Write your skill
+3. Submit a PR
+
+---
+
+## 💸 Support the Project / Поддержать проект
+
+If these skills saved you tokens and nerves, you can support the project ☕️
+
+| Network / Сеть | Address / Адрес |
+|----------------|-----------------|
 | **BTC** | `bc1qd8sa7e4f696wmcyszuxh9snqt2n66zrhz9g80j` |
 | **ETH** | `0xD26f0efE6A8F11e127c3Af3D6163BD458a1693c3` |
-| **USDT (TON)** | `UQAoI2i8P9sQpBCm4nKXvLkNf8dGmVxYzJ7B3sT9wR2eK5p` |
-| **SOL** | `99EtqBVmPxzYrzLv8fDgKfBpZcVwKqVxJ7B3sT9wR2eK` |
+| **USDT (TON)** | `UQAoI2i8P9-JeZhvGSUwKnymVyY5cb-1Rg7pdqoWMNena7DP` |
+| **SOL** | `99EtqBVTeF5UNp9a1oPi18iVXbXptTG7YQ6JeJvXMUJK` |
 
-### Другие способы
-
-| Платформа | Ссылка |
-|-----------|--------|
+| Platform / Платформа | Link / Ссылка |
+|----------------------|---------------|
 | **Boosty** | [boosty.to/josephpost](https://boosty.to/josephpost) |
 | **GitHub Sponsors** | [github.com/sponsors/zad111ak-ai](https://github.com/sponsors/zad111ak-ai) |
 
 ---
 
-## 📄 Лицензия
+## 📄 License / Лицензия
 
-MIT License — используй как хочешь.
+MIT License — use however you want. / Используй как хочешь.
 
----
+## 🔗 Links / Ссылки
 
-## 🔗 Ссылки
-
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent) — основной фреймворк
-- [Hermes Docs](https://hermes-agent.nousresearch.com/docs) — документация
-- [Issues](https://github.com/zad111ak-ai/hermes-agent-skills/issues) — баги и идеи
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) — main framework / основной фреймворк
+- [Hermes Docs](https://hermes-agent.nousresearch.com/docs) — documentation / документация
+- [Issues](https://github.com/zad111ak-ai/hermes-agent-skills/issues) — bugs & ideas / баги и идеи
