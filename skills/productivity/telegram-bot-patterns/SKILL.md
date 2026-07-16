@@ -118,12 +118,12 @@ async def handler(message: Message):
 
 ---
 
-## Паттерн 4: Anti-bot (Hysteria 2)
+## Паттерн 4: Работа через прокси
 
 ```python
 import httpx
 
-# Прокси для обхода DPI
+# Локальный прокси
 PROXY = "http://127.0.0.1:1082"
 
 async def make_request(url: str):
