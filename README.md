@@ -10,6 +10,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/hermes-agent-skills?style=social)](https://github.com/zad111ak-ai/hermes-agent-skills)
 [![GitHub contributors](https://img.shields.io/github/contributors/zad111ak-ai/hermes-agent-skills)](https://github.com/zad111ak-ai/hermes-agent-skills/graphs/contributors)
+[![Ko-fi](https://img.shields.io/badge/☕_Ko--fi-FF5E5B?logo=ko-fi)](https://ko-fi.com/zad111ak)
+[![GitHub Sponsors](https://img.shields.io/badge/💰_Sponsor-GitHub-ea4aaa)](https://github.com/sponsors/zad111ak-ai)
 
 ---
 
@@ -181,9 +183,30 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md). Quick path:
 
 ---
 
+## 🔗 Related Projects / Связанные проекты
+
+Our ecosystem of open-source AI agent tools:
+
+| Проект | Описание | ★ |
+|--------|----------|---|
+| 🌾 **[Harvest](https://github.com/zad111ak-ai/harvest)** | Веб-скрапинг + AI-агент память + P2P сеть | [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/harvest?style=social)](https://github.com/zad111ak-ai/harvest) |
+| 🧠 **[DenseForge](https://github.com/zad111ak-ai/denseforge)** | Семантическая память для AI-агентов | [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/denseforge?style=social)](https://github.com/zad111ak-ai/denseforge) |
+| 🤖 **[Hermes Bot](https://github.com/zad111ak-ai/hermes-bot)** | Telegram-бот на Hermes Agent | [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/hermes-bot?style=social)](https://github.com/zad111ak-ai/hermes-bot) |
+| 💰 **[AI Tokens Service](https://github.com/zad111ak-ai/ai-tokens-service)** | Сервис токенов для AI-моделей | [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/ai-tokens-service?style=social)](https://github.com/zad111ak-ai/ai-tokens-service) |
+| 🔐 **[Developer Toolkit](https://github.com/zad111ak-ai/developer-toolkit)** | Инструменты для разработчиков | [![GitHub stars](https://img.shields.io/github/stars/zad111ak-ai/developer-toolkit?style=social)](https://github.com/zad111ak-ai/developer-toolkit) |
+
+---
+
 ## 💸 Support the Project / Поддержать проект
 
 Если эти скиллы сэкономили вам токены и нервы — поддержите проект ☕️
+
+<p align="center">
+  <a href="https://github.com/sponsors/zad111ak-ai"><img src="https://img.shields.io/badge/⭐_GitHub_Sponsors-ea4aaa?style=for-the-badge&logo=github" alt="GitHub Sponsors"></a>
+  <a href="https://ko-fi.com/zad111ak"><img src="https://img.shields.io/badge/☕_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi" alt="Ko-fi"></a>
+</p>
+
+### 🪙 Crypto Donations / Крипто-донаты
 
 | Сеть / Network | Адрес / Address |
 |---|---|
@@ -191,6 +214,10 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md). Quick path:
 | **ETH** | `0xD26f0efE6A8F11e127c3Af3D6163BD458a1693c3` |
 | **USDT (TON)** | `UQAoI2i8P9-JeZhvGSUwKnymVyY5cb-1Rg7pdqoWMNena7DP` |
 | **SOL** | `99EtqBVTeF5UNp9a1oPi18iVXbXptTG7YQ6JeJvXMUJK` |
+
+<p align="center">
+  <em>Every donation helps build better tools for AI agents! 🙏</em>
+</p>
 
 ---
 
