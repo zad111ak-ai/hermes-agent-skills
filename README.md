@@ -33,11 +33,13 @@ AI-агенты склонны к когнитивным искажениям: a
 
 | Скилл | Описание | Экономия |
 |-------|----------|----------|
+| [adaptive-loops](skills/meta/adaptive-loops/) | Self-healing и self-learning системы — авто-восстановление из ошибок | ~40% времени на исправления |
+| [api-cost-tracker](skills/meta/api-cost-tracker/) | Трекер расходов на API в реальном времени | ~95% от сюрпризов с балансом |
 | [memory-compactor](skills/meta/memory-compactor/) | Сжатие контекста — не тратить токены на старое | ~50% токенов |
+| [memory-guardian](skills/meta/memory-guardian/) | Three-layer memory: auto-save, persistent facts, session hooks | ~90% потерянного контекста |
 | [post-mortem-analyzer](skills/meta/post-mortem-analyzer/) | Анализ ошибок — не повторять одни и те же баги | ~30% повторных ошибок |
 | [reflexive-trigger-boost](skills/meta/reflexive-trigger-boost/) | Самоанализ триггеров — понимать когда активироваться | ~20% релевантности |
 | [skill-trigger-system](skills/meta/skill-trigger-system/) | Умные триггеры — активировать скилл в нужный момент | ~40% пропущенных задач |
-| [api-cost-tracker](skills/meta/api-cost-tracker/) | Трекер расходов на API в реальном времени | ~95% от сюрпризов с балансом |
 
 #### ⚙️ Productivity (эффективность)
 
@@ -47,22 +49,25 @@ AI-агенты склонны к когнитивным искажениям: a
 | [auto-qa-gates](skills/productivity/auto-qa-gates/) | Автоматический QA — проверка качества до деплоя | ~40% багов |
 | [cost-aware-orchestrator](skills/productivity/cost-aware-orchestrator/) | Выбор дешёвой модели для простых задач | ~95% расходов |
 | [decision-framework](skills/productivity/decision-framework/) | Структурированные решения — не теряться в вариантах | ~30% analysis paralysis |
+| [github-publish-workflow](skills/productivity/github-publish-workflow/) | Полный цикл публикации на GitHub — от init до релиза | Ускорение в 3x |
+| [network-restricted-hermes](skills/productivity/network-restricted-hermes/) | Обход DPI из РФ: прокси, Hysteria 2, альтернативы | 🔓 Доступ к API |
 | [reflection-qa](skills/productivity/reflection-qa/) | Рефлексия — проверка своих ответов | ~35% ошибок |
+| [russia-hacks](skills/productivity/russia-hacks/) | Хаки для работы из России: VPN, прокси, обход блокировок | 🔓 Доступ к API |
 | [session-hygiene-plus](skills/productivity/session-hygiene-plus/) | Гигиена сессий — уборка контекста | ~87% токенов |
 | [tool-proficiency-tracker](skills/productivity/tool-proficiency-tracker/) | Трекинг инструментов — знать что работает | ~20% лишних вызовов |
-| [russia-hacks](skills/productivity/russia-hacks/) | Обход DPI из РФ: прокси, Hysteria 2, альтернативы | 🔓 Доступ к API |
+| [trading-bot-deployment](skills/productivity/trading-bot-deployment/) | Настройка trading-бота: freqtrade + Bybit + прокси | Быстрый старт |
+
+#### 📝 Content (контент)
+
+| Скилл | Описание | Экономия |
+|-------|----------|----------|
+| [content-pipeline](skills/content/content-pipeline/) | Пайплайн создания контента: idea → script → video → publish | ~60% времени на контент |
 
 #### 🔒 Security (безопасность)
 
 | Скилл | Описание |
 |-------|----------|
 | [security-audit](skills/security/security-audit/) | Аудит безопасности перед деплоем |
-
-#### 📝 Content (контент)
-
-| Скилл | Описание |
-|-------|----------|
-| [content-pipeline](skills/content/content-pipeline/) | Пайплайн создания контента для Telegram |
 
 ### 🚀 Быстрый старт
 
@@ -74,6 +79,7 @@ curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 git clone https://github.com/zad111ak-ai/hermes-agent-skills.git
 cp -r hermes-agent-skills/skills/meta/* ~/.hermes/skills/
 cp -r hermes-agent-skills/skills/productivity/* ~/.hermes/skills/
+cp -r hermes-agent-skills/skills/content/* ~/.hermes/skills/
 
 # 3. Проверь
 hermes skills list
@@ -96,7 +102,7 @@ hermes skills list
 hermes-agent-skills/
 ├── README.md / CONTRIBUTING.md / SKILL_TEMPLATE.md
 ├── examples/BEFORE_AFTER.md
-├── skills/{meta, productivity, security, content}/
+├── skills/{meta, productivity, content, security}/
 └── LICENSE
 ```
 
@@ -122,11 +128,13 @@ AI agents are prone to cognitive biases: analysis paralysis, analysis paralysis,
 
 | Skill | Description | Savings |
 |-------|-------------|---------|
+| [adaptive-loops](skills/meta/adaptive-loops/) | Self-healing and self-learning systems — auto-recover from errors | ~40% time on fixes |
+| [api-cost-tracker](skills/meta/api-cost-tracker/) | Real-time API cost tracker | ~95% balance surprises |
 | [memory-compactor](skills/meta/memory-compactor/) | Context compression — stop spending tokens on stale info | ~50% tokens |
+| [memory-guardian](skills/meta/memory-guardian/) | Three-layer memory: auto-save, persistent facts, session hooks | ~90% lost context |
 | [post-mortem-analyzer](skills/meta/post-mortem-analyzer/) | Error analysis — stop repeating the same bugs | ~30% repeat errors |
 | [reflexive-trigger-boost](skills/meta/reflexive-trigger-boost/) | Trigger self-analysis — understand when to activate | ~20% relevance |
 | [skill-trigger-system](skills/meta/skill-trigger-system/) | Smart triggers — activate the right skill at the right time | ~40% missed tasks |
-| [api-cost-tracker](skills/meta/api-cost-tracker/) | Real-time API cost tracker | ~95% balance surprises |
 
 #### ⚙️ Productivity
 
@@ -136,22 +144,25 @@ AI agents are prone to cognitive biases: analysis paralysis, analysis paralysis,
 | [auto-qa-gates](skills/productivity/auto-qa-gates/) | Automated QA — quality checks before deploy | ~40% bugs |
 | [cost-aware-orchestrator](skills/productivity/cost-aware-orchestrator/) | Choose cheap models for simple tasks | ~95% costs |
 | [decision-framework](skills/productivity/decision-framework/) | Structured decisions — stop getting lost in options | ~30% analysis paralysis |
+| [github-publish-workflow](skills/productivity/github-publish-workflow/) | Full GitHub publishing cycle — from init to release | 3x faster |
+| [network-restricted-hermes](skills/productivity/network-restricted-hermes/) | DPI bypass from Russia: proxies, Hysteria 2, alternatives | 🔓 API access |
 | [reflection-qa](skills/productivity/reflection-qa/) | Reflection — verify your own answers | ~35% errors |
+| [russia-hacks](skills/productivity/russia-hacks/) | Hacks for working from Russia: VPN, proxies, bypass blocks | 🔓 API access |
 | [session-hygiene-plus](skills/productivity/session-hygiene-plus/) | Session hygiene — clean up context | ~87% tokens |
 | [tool-proficiency-tracker](skills/productivity/tool-proficiency-tracker/) | Tool tracking — know what works | ~20% extra calls |
-| [russia-hacks](skills/productivity/russia-hacks/) | DPI bypass from Russia: proxies, Hysteria 2, alternatives | 🔓 API access |
+| [trading-bot-deployment](skills/productivity/trading-bot-deployment/) | Trading bot setup: freqtrade + Bybit + proxy | Quick start |
+
+#### 📝 Content
+
+| Skill | Description | Savings |
+|-------|-------------|---------|
+| [content-pipeline](skills/content/content-pipeline/) | Content pipeline: idea → script → video → publish | ~60% content time |
 
 #### 🔒 Security
 
 | Skill | Description |
 |-------|-------------|
 | [security-audit](skills/security/security-audit/) | Security audit before deployment |
-
-#### 📝 Content
-
-| Skill | Description |
-|-------|-------------|
-| [content-pipeline](skills/content/content-pipeline/) | Content creation pipeline for Telegram |
 
 ### 🚀 Quick Start
 
@@ -163,6 +174,7 @@ curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 git clone https://github.com/zad111ak-ai/hermes-agent-skills.git
 cp -r hermes-agent-skills/skills/meta/* ~/.hermes/skills/
 cp -r hermes-agent-skills/skills/productivity/* ~/.hermes/skills/
+cp -r hermes-agent-skills/skills/content/* ~/.hermes/skills/
 
 # 3. Verify
 hermes skills list
